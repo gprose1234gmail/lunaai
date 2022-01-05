@@ -53,8 +53,8 @@ async def type_and_send(message):
 @luna.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
-        "[GitHub](https://github.com/thehamkercat/LunaChatBot)"
-        + " | [Group](t.me/PatheticProgrammers)",
+        "[LUNA](https://telegra.ph/file/1a037c8c3eca8ddcd9dfe.jpg)"
+        + " | [Group](t.me/ThecoolmoonBot)",
         disable_web_page_preview=True,
     )
 
@@ -63,7 +63,7 @@ async def repo(_, message):
 async def start(_, message):
     await luna.send_chat_action(message.chat.id, "typing")
     await sleep(2)
-    await message.reply_text("/repo - Get Repo Link")
+    await message.reply_text("/repo - MY REPO IS PRIVATE GUYS SORRY ")
 
 
 @luna.on_message(
